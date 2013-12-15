@@ -6,7 +6,7 @@ public class Transmission {
 
     // these are for both generator not Disease
     private String city; // effective co efficent in urban areas
-    private String cost; // Current Cost they will update for each trade
+    private double cost; // Current Cost they will update for each trade
     private String rural; // effective co efficent in
 
 
@@ -23,7 +23,7 @@ public class Transmission {
         return this.city;
     }
 
-    public String getCost(){
+    public double getCost(){
         return this.cost;
     }
 
