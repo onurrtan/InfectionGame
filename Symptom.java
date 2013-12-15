@@ -3,8 +3,8 @@
  */
 public class Symptom {
   
-    private String cost; // effective co efficent in urban areas
-    private String infectivity; // Current Cost they will update for each trade
+    private double cost; 
+    private String infectivity; 
     private String lethality;
     
     void changeSymptom(){
@@ -14,7 +14,7 @@ public class Symptom {
 
     }
     
-    public String getCost(){
+    public double getCost(){
         return this.Cost;
     }
 
