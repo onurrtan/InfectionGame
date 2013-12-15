@@ -31,5 +31,6 @@ public class Water extends Transmission{
         waterPrice = waterValues[0];
         powerOfWater = waterValues[0];
       }
+      
 
 }
