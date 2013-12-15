@@ -3,8 +3,8 @@
  */
 public class Ability {
   
-    private String coldness; // effective co efficent in urban areas
-    private double cost; // Current Cost they will update for each trade
+    private String coldness; 
+    private double cost; 
     private String drug;
     private String temperature;
     
