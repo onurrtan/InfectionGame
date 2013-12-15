@@ -3,9 +3,11 @@
  */
 public class Transmission {
 
-    private String city; // effective coefficent in urban areas
+
+    // these are for both generator not Disease
+    private String city; // effective co efficent in urban areas
     private String cost; // Current Cost they will update for each trade
-    private String rural; // effective coefficent in
+    private String rural; // effective co efficent in
 
 
     void changeTransmission(){
@@ -14,6 +16,8 @@ public class Transmission {
     protected void fillArray(){
 
     }
+
+
 
     public String getCity(){
         return this.city;

@@ -3,13 +3,31 @@
  */
 public class Sheep extends Transmission{
 
-    int[] SheepArray = new int[5]; // Each Index Contain Own power
+    int[] SheepArray = new int[5]; // Each Index Contain Own power and price these are same
     protected int sheepIndex = 0; // Current index Start with 0 when the beginning of game
+    private int sheepPrice = 0;
+    private int sheepPower = 0;
+
     @Override
     protected void fillArray(){
         for (int i = 0; i<5; i++){
-            SheepArray[i] = i*10;
+            SheepArray[i] = (i+1)*3; // i+1 because avoid first element be 0
         }
+        sheepPrice = SheepArray[0];
+        sheepPower = SheepArray[0];
+    }
+
+    public void buySheep(){
+        sheepIndex++;
+        sheepPrice = SheepArray[sheepIndex];
+        sheepPower = SheepArray[sheepIndex];
+    }
+
+    public int getSheepPrice(){
+        return this.sheepPrice;
+    }
+    public int getSheepPower(){
+        return this.sheepPower;
     }
 
 
